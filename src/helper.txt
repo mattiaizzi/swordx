@@ -1,0 +1,32 @@
+Utilizzo: swordx [options] [inputs]
+
+Inputs: una sequenza di file e/o directory. E' possibile passare anche un'espressione regolare.
+
+Options:
+
+  -help | -h                         Mostra queste informazioni.
+
+  -output <file> | -o <file>         Le statistiche collezionate vengono salvate nel file <file>.
+ 
+  -recursive | -r                    Nella collezione delle informazioni di una directory vengono seguite le sottodirectory.
+
+  -follow | -f                       Nell'elaborazione di una directory vengono seguiti i link.
+
+  -explude <file> | -e <file>        <file> non viene considerato nell'elaborazione.
+
+  -alpha | -a                        Vengono considerate nella statistica solo le parole contenenti caratteri alfabetici.
+
+  -min <num> | -m <num>              Vengono considerate nella statistiche solo le parole con una lunghezza maggiore o uguale a <num>.
+
+  -ignore <file> | -i <file>         <file> è un file di testo contenente un elenco di parole (una per riga) che vengono ignorate nella statistica.
+
+  -sortbyoccurrency | -s               Le parole vengono inserite nel file di output ordinate per numero di occorrenze.
+
+  -log <file> | -l <file>              Genera un file di log (identificato da <file>) dove viene riportate viene riportata, per ogni file analizzato viene riportata una riga della forma <name> cw iw time dove
+
+    <name> è il nome del file analizzato;
+    cw è il numero delle parole registrate;
+    iw è il numero delle parole ignorate;
+    time è il tempo necessario all'elaborazione del file.
+
+
